@@ -5,7 +5,7 @@ const portfolioData = {
         name: "Ayush Singh",
         role: "Full-Stack Developer (Python, FastAPI, Next.js) | Cloud Enthusiast",
         bio: "I am a dedicated BCA Student at the International School of Management Patna, specializing in Full-Stack Web Development, Cloud Computing, and Artificial Intelligence. With a strong foundation in modern architectures—including FastAPI, Next.js, and PostgreSQL—I am passionate about architecting scalable backend systems, designing responsive user interfaces, and building robust software solutions that drive real-world impact.",
-        profileImage: "AYU.png", // Pura assets/ hata diya
+        profileImage: "AYU.png", // Direct image naam
     },
     socialLinks: {
         github: "https://github.com/ayushkumarsingh471-svg",
@@ -38,15 +38,22 @@ const portfolioData = {
     projects: [
         {
             title: "Cloud-Based ERP Attendance Management System",
-            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with International School of Management,Patna.",
+            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with Aryabhatta Knowledge University, Patna.",
             tech: "FastAPI, Python, PostgreSQL, Tailwind CSS, Alpine.js",
             isDoubleLink: true,
             linkLive: "https://ism-attendance-2.vercel.app",
-            linkPDF: "Project_Report_Colorful-v2.pdf" // Pura assets/ hata diya
+            linkPDF: "Project_Report_Colorful-v2.pdf"
+        },
+        {
+            title: "Interactive Game Development",
+            description: "Explored and built interactive web-based games, applying advanced logical programming and UI design.",
+            tech: "C++, Object-Oriented Programming (OOP)",
+            isDoubleLink: false,
+            link: "#"
         }
     ],
     certifications: [
-        { name: "Python Programming Internship - SPARKIIT", link: "https://www.linkedin.com/posts/ayush-singh-0178512b4_excited-to-share-a-major-milestone-in-my-activity-7221376829143715840-X1jE" },
+        { name: "Python Programming Internship - SPARKIIT", link: "https://lnkd.in/p/djwf4eNM" },
         { name: "Growth & Operation - SPARKIIT", link: "https://lnkd.in/p/dg4A5b6M" },
         { name: "ADCA - FIIT SKILL DEVELOPMENT", link: "https://lnkd.in/p/dXEif_H7" },
         { name: "Frontend Development - OneRoadmap", link: "https://lnkd.in/p/dapN8vRF" },

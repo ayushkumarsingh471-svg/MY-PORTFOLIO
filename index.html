@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Singh | Portfolio</title>
+    <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Anti-Gravity Canvas Background -->
     <canvas id="particle-canvas"></canvas>
 
+    <!-- Navbar -->
     <nav data-aos="fade-down">
         <div class="logo" id="brand-logo">Logo</div>
         <ul class="nav-links">
@@ -22,12 +26,14 @@
         </ul>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content" data-aos="fade-right">
             <h1>Hi, I'm <span id="dev-name" class="text-gradient"></span></h1>
             <h2 id="dev-role"></h2>
             
             <div class="social-icons" id="social-container">
+                <!-- Links injected by JS -->
             </div>
             <a href="#projects" class="btn">View My Work</a>
         </div>
@@ -36,33 +42,42 @@
         </div>
     </section>
 
+    <!-- About & Skills Section -->
     <section id="about" class="about-section">
         <h2 data-aos="fade-up">About Me</h2>
         <p id="dev-bio" data-aos="fade-up" data-aos-delay="200"></p>
         
-        <h3 data-aos="fade-up" style="margin-top: 50px; text-align: center;">My Skills</h3>
+        <h3 data-aos="fade-up" style="margin-top: 50px; text-align: center; color: var(--accent-glow); font-weight: 400;">My Skills</h3>
         <div class="skills-grid" id="skills-container">
+            <!-- Skills injected by JS -->
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience" class="experience-section">
         <h2 data-aos="fade-up">Experience</h2>
         <div class="timeline" id="experience-container">
+            <!-- Experience injected by JS -->
         </div>
     </section>
 
+    <!-- Certifications Section -->
     <section id="certifications" class="certifications-section">
         <h2 data-aos="fade-up">Certifications & Achievements</h2>
         <ul class="cert-list" id="cert-container">
+            <!-- Certifications injected by JS -->
         </ul>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <h2 data-aos="fade-up">Featured Projects</h2>
         <div class="projects-grid" id="projects-container">
+            <!-- Projects injected by JS -->
         </div>
     </section>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="data.js"></script>
     <script src="app.js"></script>

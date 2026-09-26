@@ -1,5 +1,3 @@
-AOS.init({ duration: 1000, once: true, offset: 50 });
-
 document.addEventListener('DOMContentLoaded', () => {
     
     // === 1. GLOWING ANTI-GRAVITY CANVAS PARTICLES ===
@@ -8,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ctx = canvas.getContext('2d');
         let particlesArray = [];
         
-        let mouse = { x: null, y: null, radius: 150 } // Increased repulse radius
+        let mouse = { x: null, y: null, radius: 150 } 
         canvas.width = window.innerWidth; canvas.height = window.innerHeight;
 
         window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
@@ -21,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             constructor() {
                 this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height;
                 this.size = Math.random() * 3; this.density = (Math.random() * 30) + 1; 
-                // Random color between Cyan and Pink for particles
                 this.color = Math.random() > 0.5 ? '#00e5ff' : '#ff007f';
             }
             update() {
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fillStyle = this.color;
-                // Add Glow to Particles
                 ctx.shadowBlur = 15;
                 ctx.shadowColor = this.color;
                 ctx.fill();
@@ -134,7 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if(certContainer) {
         portfolioData.certifications.forEach((cert, index) => {
             let li = document.createElement('li'); li.className = 'glass-card';
-            li.setAttribute('data-aos', 'fade-right'); li.setAttribute('data-aos-delay', (index % 3) * 100);
+            li.setAttribute('data-aos', 'fade-left'); // Side se aane ke liye 'fade-left'
+            li.setAttribute('data-aos-delay', (index % 3) * 100);
             li.innerHTML = `
                 <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
                     <div style="display: flex; align-items: center;">
@@ -152,7 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if(projectsContainer) {
         portfolioData.projects.forEach((proj, index) => {
             let div = document.createElement('div'); div.className = 'project-card glass-card';
-            div.setAttribute('data-aos', 'zoom-in'); div.setAttribute('data-aos-delay', (index % 3) * 100);
+            div.setAttribute('data-aos', 'zoom-in-up'); // Project ke liye upar aane ka effect
+            div.setAttribute('data-aos-delay', (index % 3) * 100);
             
             let buttonsHTML = '';
             if(proj.isDoubleLink) {
@@ -180,7 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    setTimeout(typeWriter, 1000);
+    // Initialize Animations
+    AOS.init({ duration: 1000, once: true, offset: 50 });
+    
+    // Yaha Timeout lagana zaroori tha taaki sab elements DOM me aane ke baad hi Animate ho.
+    setTimeout(() => {
+        AOS.refresh();
+        typeWriter();
+    }, 500);
 });
 
 // === 5. TYPEWRITER EFFECT ===
