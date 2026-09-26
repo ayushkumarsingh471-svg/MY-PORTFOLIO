@@ -5,7 +5,7 @@ const portfolioData = {
         name: "Ayush Singh",
         role: "Full-Stack Developer (Python, FastAPI, Next.js) | Cloud Enthusiast",
         bio: "I am a dedicated BCA Student at the International School of Management Patna, specializing in Full-Stack Web Development, Cloud Computing, and Artificial Intelligence. With a strong foundation in modern architectures—including FastAPI, Next.js, and PostgreSQL—I am passionate about architecting scalable backend systems, designing responsive user interfaces, and building robust software solutions that drive real-world impact.",
-        profileImage: "assets/AYU.png", 
+        profileImage: "AYU.png", // Pura assets/ hata diya
     },
     socialLinks: {
         github: "https://github.com/ayushkumarsingh471-svg",
@@ -38,11 +38,11 @@ const portfolioData = {
     projects: [
         {
             title: "Cloud-Based ERP Attendance Management System",
-            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with International School of Management , Patna.",
+            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with International School of Management,Patna.",
             tech: "FastAPI, Python, PostgreSQL, Tailwind CSS, Alpine.js",
             isDoubleLink: true,
             linkLive: "https://ism-attendance-2.vercel.app",
-            linkPDF: "assets/Project_Report_Colorful-v2.pdf"
+            linkPDF: "Project_Report_Colorful-v2.pdf" // Pura assets/ hata diya
         }
     ],
     certifications: [
