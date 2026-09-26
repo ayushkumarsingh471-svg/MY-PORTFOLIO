@@ -1,3 +1,5 @@
+AOS.init({ duration: 1000, once: true, offset: 50 });
+
 document.addEventListener('DOMContentLoaded', () => {
     
     // === 1. GLOWING ANTI-GRAVITY CANVAS PARTICLES ===
@@ -6,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ctx = canvas.getContext('2d');
         let particlesArray = [];
         
-        let mouse = { x: null, y: null, radius: 150 } 
+        let mouse = { x: null, y: null, radius: 150 } // Increased repulse radius
         canvas.width = window.innerWidth; canvas.height = window.innerHeight;
 
         window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             constructor() {
                 this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height;
                 this.size = Math.random() * 3; this.density = (Math.random() * 30) + 1; 
+                // Random color between Cyan and Pink for particles
                 this.color = Math.random() > 0.5 ? '#00e5ff' : '#ff007f';
             }
             update() {
@@ -39,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fillStyle = this.color;
+                // Add Glow to Particles
                 ctx.shadowBlur = 15;
                 ctx.shadowColor = this.color;
                 ctx.fill();
@@ -93,10 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const socialContainer = document.getElementById('social-container');
     if(socialContainer) {
+        // Yahan WhatsApp link add kar diya gaya hai
         socialContainer.innerHTML = `
             <a href="${portfolioData.socialLinks.github}" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
             <a href="${portfolioData.socialLinks.linkedin}" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             <a href="${portfolioData.socialLinks.instagram}" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="${portfolioData.socialLinks.whatsapp}" target="_blank" title="WhatsApp Me"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="${portfolioData.socialLinks.email}" title="Email"><i class="fa-solid fa-envelope"></i></a>
             <a href="${portfolioData.socialLinks.phone}" title="Call Me"><i class="fa-solid fa-phone"></i></a>
         `;
@@ -130,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(certContainer) {
         portfolioData.certifications.forEach((cert, index) => {
             let li = document.createElement('li'); li.className = 'glass-card';
-            li.setAttribute('data-aos', 'fade-left'); // Side se aane ke liye 'fade-left'
+            li.setAttribute('data-aos', 'fade-left'); 
             li.setAttribute('data-aos-delay', (index % 3) * 100);
             li.innerHTML = `
                 <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
@@ -149,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(projectsContainer) {
         portfolioData.projects.forEach((proj, index) => {
             let div = document.createElement('div'); div.className = 'project-card glass-card';
-            div.setAttribute('data-aos', 'zoom-in-up'); // Project ke liye upar aane ka effect
+            div.setAttribute('data-aos', 'zoom-in-up'); 
             div.setAttribute('data-aos-delay', (index % 3) * 100);
             
             let buttonsHTML = '';
@@ -188,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500);
 });
 
-// === 5. TYPEWRITER EFFECT ===
+// === 5. NEW TYPEWRITER EFFECT (Game Dev Removed) ===
 const roles = ["Software Developer", "Full-Stack Web Dev", "Backend Engineer", "Cloud Enthusiast"];
 let roleIndex = 0; let charIndex = 0; let isDeleting = false; let typingSpeed = 100;
 

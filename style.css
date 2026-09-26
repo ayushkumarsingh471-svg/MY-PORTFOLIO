@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-    --bg-main: #020202;
-    --accent-glow: #00e5ff;
-    --accent-secondary: #ff007f;
-    --text-main: #ffffff;
-    --text-muted: #cceeff;
+    --bg-main: #020202; /* Extremely dark background for better glow */
+    --accent-glow: #00e5ff; /* Super Bright Cyan */
+    --accent-secondary: #ff007f; /* Super Bright Pink */
+    
+    --text-main: #ffffff; /* Pure white for popping text */
+    --text-muted: #cceeff; /* Light glowing blue for paragraphs */
+    
     --glass-bg: rgba(10, 10, 15, 0.6);
-    --glass-border: rgba(0, 229, 255, 0.4);
+    --glass-border: rgba(0, 229, 255, 0.4); /* Colored border for cards */
 }
 
 * {
@@ -34,7 +36,7 @@ body { background-color: var(--bg-main); color: var(--text-main); overflow-x: hi
     border-radius: 50%; z-index: 9999; pointer-events: none;
     width: 8px; height: 8px; 
     background-color: #ffffff; 
-    box-shadow: 0 0 15px var(--accent-glow), 0 0 30px var(--accent-glow);
+    box-shadow: 0 0 15px var(--accent-glow), 0 0 30px var(--accent-glow); /* High Glow */
     transition: width 0.1s, height 0.1s, background-color 0.2s;
 }
 
@@ -85,6 +87,7 @@ a:hover ~ .cursor-dot, button:hover ~ .cursor-dot, .btn:hover ~ .cursor-dot {
     background: linear-gradient(90deg, #ffffff, var(--accent-glow), var(--accent-secondary)); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
+    /* The heavy glow effect on text */
     text-shadow: 0px 0px 10px rgba(0, 229, 255, 0.6), 0px 0px 20px rgba(0, 229, 255, 0.4), 0px 0px 30px rgba(255, 0, 127, 0.4); 
 }
 
@@ -95,6 +98,7 @@ h3 { font-size: 1.6rem; margin-bottom: 15px; font-weight: 600; }
 .glass-card {
     background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
     border: 1px solid var(--glass-border); border-radius: 16px; 
+    /* Outer and Inner glow for cards */
     box-shadow: 0 0 20px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(255, 0, 127, 0.05);
     transition: 0.4s ease;
 }

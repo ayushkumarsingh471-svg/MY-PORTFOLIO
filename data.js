@@ -5,14 +5,15 @@ const portfolioData = {
         name: "Ayush Singh",
         role: "Full-Stack Developer (Python, FastAPI, Next.js) | Cloud Enthusiast",
         bio: "I am a dedicated BCA Student at the International School of Management Patna, specializing in Full-Stack Web Development, Cloud Computing, and Artificial Intelligence. With a strong foundation in modern architectures—including FastAPI, Next.js, and PostgreSQL—I am passionate about architecting scalable backend systems, designing responsive user interfaces, and building robust software solutions that drive real-world impact.",
-        profileImage: "AYU.png", // Direct image naam
+        profileImage: "AYU.png", 
     },
     socialLinks: {
         github: "https://github.com/ayushkumarsingh471-svg",
         linkedin: "https://www.linkedin.com/in/ayush-singh-0178512b4",
         instagram: "https://www.instagram.com/ayush_singh6429?stkn=Y3RtanF5MnlidmI2",
+        whatsapp: "https://wa.me/918527748997", // WhatsApp link add kar diya hai
         email: "mailto:ayushkumarsingh471@gmail.com",
-        phone: "tel:85277488997"
+        phone: "tel:8527748997" // Phone number correct kar diya hai
     },
     skills: [
         "Python", "FastAPI", "React.js", "Node.js", "Next.js", "C++", 
@@ -38,13 +39,13 @@ const portfolioData = {
     projects: [
         {
             title: "Cloud-Based ERP Attendance Management System",
-            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with International School of Management , Patna.",
+            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with International School of Management,Patna.",
             tech: "FastAPI, Python, PostgreSQL, Tailwind CSS, Alpine.js",
             isDoubleLink: true,
             linkLive: "https://ism-attendance-2.vercel.app",
             linkPDF: "Project_Report_Colorful-v2.pdf"
         },
-       
+        
     ],
     certifications: [
         { name: "Python Programming Internship - SPARKIIT", link: "https://lnkd.in/p/djwf4eNM" },
