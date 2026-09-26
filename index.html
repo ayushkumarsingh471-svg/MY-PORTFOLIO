@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Singh | Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <nav data-aos="fade-down">
+        <div class="logo" id="brand-logo">Logo</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-right">
+            <h1>Hi, I'm <span id="dev-name" class="text-gradient"></span></h1>
+            <h2 id="dev-role"></h2>
+            
+            <div class="social-icons" id="social-container">
+            </div>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image" data-aos="zoom-in">
+            <img id="dev-image" src="" alt="Profile Photo">
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 data-aos="fade-up">About Me</h2>
+        <p id="dev-bio" data-aos="fade-up" data-aos-delay="200"></p>
+        
+        <h3 data-aos="fade-up" style="margin-top: 50px; text-align: center;">My Skills</h3>
+        <div class="skills-grid" id="skills-container">
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <h2 data-aos="fade-up">Experience</h2>
+        <div class="timeline" id="experience-container">
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications-section">
+        <h2 data-aos="fade-up">Certifications & Achievements</h2>
+        <ul class="cert-list" id="cert-container">
+        </ul>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 data-aos="fade-up">Featured Projects</h2>
+        <div class="projects-grid" id="projects-container">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
