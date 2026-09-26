@@ -38,19 +38,13 @@ const portfolioData = {
     projects: [
         {
             title: "Cloud-Based ERP Attendance Management System",
-            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with Aryabhatta Knowledge University, Patna.",
+            description: "A comprehensive, multi-tenant web application engineered to streamline attendance management. Associated with International School of Management , Patna.",
             tech: "FastAPI, Python, PostgreSQL, Tailwind CSS, Alpine.js",
             isDoubleLink: true,
             linkLive: "https://ism-attendance-2.vercel.app",
             linkPDF: "Project_Report_Colorful-v2.pdf"
         },
-        {
-            title: "Interactive Game Development",
-            description: "Explored and built interactive web-based games, applying advanced logical programming and UI design.",
-            tech: "C++, Object-Oriented Programming (OOP)",
-            isDoubleLink: false,
-            link: "#"
-        }
+       
     ],
     certifications: [
         { name: "Python Programming Internship - SPARKIIT", link: "https://lnkd.in/p/djwf4eNM" },
